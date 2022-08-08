@@ -1,0 +1,31 @@
+.pagination {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.pagination_page {
+    border: 1px solid grey;
+    border-radius: 5px;
+    background-color: greenyellow;
+    margin: 10px;
+    padding: 5px;
+}
+
+.pagination_page:hover {
+    background-color: green;
+    cursor: pointer;
+}
+
+
+.pagination_page_picked {
+    border: 1px solid grey;
+    border-radius: 5px;
+    background-color: darkgreen;
+    margin: 10px;
+    padding: 5px;
+}
+

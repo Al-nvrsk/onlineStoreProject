@@ -1,0 +1,10 @@
+.deviceListConteiner {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 250px);
+    grid-template-rows: 250px;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    margin-left: 20px;
+    min-height: 270px;
+    
+  }

@@ -1,0 +1,9 @@
+.adminPage {
+    display: flex;
+   
+    flex-direction: column;
+    width: 100%;
+    font-size: medium;
+    justify-content: center;
+    justify-items: center;
+}

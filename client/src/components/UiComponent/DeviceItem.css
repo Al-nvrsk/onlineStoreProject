@@ -1,0 +1,45 @@
+.deviceItemConteiner {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 250px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    flex-wrap: wrap;
+    cursor: pointer;
+   justify-content: center;
+    margin-top: 20px;
+}
+
+.deviceItemConteiner img {
+   display: flex;
+   flex-wrap: wrap;
+   max-height: 75%;
+   width: auto;
+   object-fit:contain;
+   
+}
+
+.deviceItemName {
+    display: flex;
+   justify-content: space-between;
+    padding: 0;
+    margin: 0;
+       
+}
+
+
+.deviceItemConteiner div {
+  margin: 5px;
+}
+
+.rating {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.rating img {
+    width: 15px;
+    height: 15px;
+}
+

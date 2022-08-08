@@ -1,0 +1,9 @@
+/client/node_modules
+/client/build
+/client/.env
+/client/.gitignore
+/client/README.md
+
+/server/node_modules
+/server/.env
+/server/.gitignore

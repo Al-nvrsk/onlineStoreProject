@@ -1,0 +1,34 @@
+.deviceModalWindow {
+   display: block;
+   width: 25vw;
+   justify-content: center;
+   align-items: center;
+  
+
+}
+
+.devicedropdown {
+    margin: 10px;
+    margin-left: 50px;
+   flex-wrap: nowrap;
+    display: flex;
+   justify-content: space-between;
+    
+}
+
+.devicedropdown input {
+    width: 240px;
+}
+
+.charactericticInput {
+    margin: 5px;
+}
+
+.charactericticInput input {
+    margin: 10px;
+    padding: 10px;
+}
+
+.charactericticInput button {
+    color: red;
+}

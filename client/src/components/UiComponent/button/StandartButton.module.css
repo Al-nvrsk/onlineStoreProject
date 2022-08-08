@@ -1,0 +1,7 @@
+.StandartButton {
+    padding: 5px;
+    border-radius: 2px;
+    background-color: aquamarine;
+    color: red;
+    cursor: pointer;
+}

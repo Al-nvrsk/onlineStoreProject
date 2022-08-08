@@ -1,0 +1,11 @@
+.devicePageHeader {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px; ;
+    
+}
+
+.devicePageHeader img {
+    max-width: 500px;
+    max-height: 500px;
+}

@@ -1,0 +1,35 @@
+
+
+.typeCard {
+    display: flex;
+    border: 1px solid green;
+    border-radius: 3px;
+    padding: 3px;
+    margin: 3px;
+    cursor: pointer;
+
+    
+}
+
+.typeCard:hover {
+    background-color: rgb(161, 13, 129);
+}
+
+.typeCard:active {
+    background-color: orange;
+}
+
+.typeCard:focus {
+    background-color: red;
+}
+
+.typeCardSelected {
+    display: flex;
+    border: 1px solid green;
+    border-radius: 3px;
+    padding: 3px;
+    margin: 3px;
+    cursor: pointer;
+    font: bold;
+    background-color: red;
+}
