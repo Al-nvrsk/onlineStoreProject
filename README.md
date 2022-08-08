@@ -1,12 +1,16 @@
 # onlineStoreProject
-simple online store with backend and working Admin panel for add new items
+Simple online store with backend and working Admin panel for add new items.
 In this project used:
-  Backend:
+
+ Backend:
+  -----------
   - Node JS
   - Express
   - PostgreSQL
   - jwt authentication
-  Frontend:
+  
+ Frontend:
+  -----------
   - React JS
   - Mobx
   - axios
