@@ -1,13 +1,14 @@
 import React, { useContext, useEffect } from 'react'
-import { BrandBar } from '../components/BrandBar'
+import { BrandBar } from '../components/Bars/BrandBar'
 import { DeviceList } from '../components/DeviceList'
-import { TypeBar } from '../components/TypeBar'
+import { TypeBar } from '../components/Bars/TypeBar'
 import { StandartButton } from '../components/UiComponent/button/StandartButton'
 import './Shop.css'
 import { Context } from '..'
 import { observer } from 'mobx-react-lite'
 import { fetchBrands, fetchDevices, fetchTypes } from '../http/deviceApi'
-import { Pagination } from '../components/UiComponent/pagination/Pagination'
+import { Pagination } from '../components/Pagination/Pagination'
+import { CancelButton } from '../components/UiComponent/button/CancelButton'
 
 export const Shop = observer( () => {
 
@@ -27,19 +28,23 @@ useEffect(()=>{
     device.setTotalCount(data.count)})
 },[device.page, device.selectedBrand, device.selectedType])
 
-const refresh = () => {
+const reset = () => {
   device.setSelectedBrand({})
   device.setSelectedType({})
-  console.log('refresh')
+  
 }
   
   return (
  
     <div className='shopContainer'>
-      <div className='typebar'>
-        <h4>Device type:</h4>
+      <div className='shopTypebar'>
+        {/* <h4>Device type:</h4> */}
         <TypeBar />
-        <button onClick = {() => refresh()}> Refresh filter </button>
+        <div className = 'shopTypebarReset'>
+          <CancelButton  clicked = {reset}> 
+            Reset filter 
+          </CancelButton>
+        </div>
       </div>
       <div className='main'>
         <BrandBar />

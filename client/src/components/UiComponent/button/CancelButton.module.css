@@ -1,0 +1,33 @@
+.CancelButtonMain {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 50px;
+    width: 200px;
+    justify-content: left;
+    align-items: center;
+}
+
+.CancelButton {
+    display: flex;
+    background-color: rgba(230, 117, 97, 0.699);
+    border: 2px solid rgba(70, 22, 7, 0.699);
+    border-radius: 3px;
+    padding: 5px;
+    margin: 7px;
+    cursor: pointer;
+    width: 200px;
+    font-size: medium;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.CancelButton:hover {
+    background-color: rgba(204, 39, 27, 0.699);
+}
+
+.CancelButton:active {
+    font-weight: bold;
+    background-color: rgba(204, 39, 27, 0.699);
+}

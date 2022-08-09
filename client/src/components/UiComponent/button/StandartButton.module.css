@@ -1,7 +1,44 @@
+.StandartButtonMain {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 50px;
+    width: 200px;
+    justify-content: left;
+    align-items: center;
+}
+
 .StandartButton {
+    display: flex;
+    background-color: rgba(117, 189, 117, 0.699);
+    border: 2px solid rgba(32, 71, 32, 0.699);
+    border-radius: 3px;
     padding: 5px;
-    border-radius: 2px;
-    background-color: aquamarine;
-    color: red;
+    margin: 7px;
     cursor: pointer;
+    width: 200px;
+    font-size: medium;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.StandartButton:hover {
+    background-color: rgba(68, 114, 68, 0.699);
+}
+
+.StandartButtonSelected {
+    display: flex;
+    border: 2px solid rgba(32, 71, 32, 0.699);
+    border-radius: 3px;
+    padding: 3px;
+    margin: 3px;
+    cursor: pointer;
+    font: bold;
+    background-color: rgba(68, 114, 68, 0.699);
+    width: 200px;
+    font-size: medium;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
 }

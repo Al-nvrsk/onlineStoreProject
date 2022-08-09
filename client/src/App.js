@@ -1,11 +1,12 @@
 import { BrowserRouter } from "react-router-dom";
 import { AppRouter } from "./components/AppRouter";
-import { Navbar } from "./components/Navbar";
+import { Navbar } from "./components/Bars/Navbar";
 import './App.css'
 import { useContext, useEffect, useState } from "react";
 import { Context } from ".";
 import { check } from "./http/userAPI";
 import { observer } from "mobx-react-lite";
+import { Footer } from "./components/Footer/Footer";
 
 const App = observer (() => {
   
@@ -29,8 +30,11 @@ const App = observer (() => {
   return (
     <div className = "MainPage">
     <BrowserRouter>
-        <Navbar />
-    <AppRouter />
+      <Navbar />
+      <div className = {"MainPageContent"}> 
+        <AppRouter />
+      </div>
+      <Footer />
     
     </BrowserRouter>
     </div>

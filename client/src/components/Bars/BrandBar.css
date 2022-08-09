@@ -1,0 +1,10 @@
+.BrandBar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: auto;
+    justify-content: left;
+    align-items: center;
+}
+
+

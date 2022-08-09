@@ -10,6 +10,7 @@ export const DeviceItem = ({device}) => {
   return (
     <div className='deviceItemConteiner' onClick={() => navigate(DEVICE_ROUTE + '/' + device.id )}>
         {/* <div>  */}
+            
             <img src = {process.env.REACT_APP_API_URL + 'api/' + device.img} />
         {/* </div> */}
         <div className='deviceItemName' >

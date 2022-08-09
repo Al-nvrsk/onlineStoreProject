@@ -1,0 +1,19 @@
+.listOfTools {
+    padding: 20px;
+    color: black;
+}
+
+.listOfTools li {
+    padding: 7px;
+}
+
+.listofToolsFrontend {
+    padding-top: 15px ;
+}
+
+.listOfToolsButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}

@@ -10,16 +10,20 @@
     grid-template-columns: 1fr 11fr;
 }
 
-.typebar {
-    width: 300px;
-  
-    margin: 5px;
-    
+.shopTypebar {
+    width: 250px;
+    margin: 20px;
 
 }
+
+.shopTypebarReset {
+    margin: 20px;
+}
+
 .main {
     display: flex;
     flex-direction: column;
+    margin: 20px;
     
     
 }

@@ -1,0 +1,34 @@
+.pageBar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    font-size: medium;
+}
+
+.pageBar_page {
+    border: 2px solid rgba(32, 71, 32, 0.699);
+    border-radius: 5px;
+    background-color: rgba(117, 189, 117, 0.699);
+    margin: 10px;
+    padding: 5px;
+}
+
+.pageBar_page:hover {
+    background-color: rgba(68, 114, 68, 0.699);
+    cursor: pointer;
+}
+
+
+.pageBar_page_picked {
+    border: 2px solid rgba(32, 71, 32, 0.699);
+    border-radius: 5px;
+    background-color:  rgba(68, 114, 68, 0.699);
+    margin: 10px;
+    padding: 5px;
+    font-weight: bold;
+    font-size: medium;
+}
+

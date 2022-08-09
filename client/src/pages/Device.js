@@ -23,7 +23,7 @@ export const Device = () => {
 //     // {id: 4, title: 'Quantity of core', description: '2' },
 //     // {id: 5, title: 'Batery', description: '4000mA'}
 //   ]
-
+if (device.img) {
   return (
     <div>
         <div className='devicePageHeader'>
@@ -51,5 +51,6 @@ export const Device = () => {
                 {info.description} </div>)}
         </div>
     </div>
-  )
+  )}
+  else {return <div></div>}
 }

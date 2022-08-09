@@ -3,7 +3,7 @@ import { Route, Redirect, Routes} from 'react-router-dom'
 import { authRoutes, publicRoutes } from '../routes'
 import { SHOP_ROUTE } from '../utils/consts'
 import { Context } from '../index'
-import { Navbar } from './Navbar'
+import { Navbar } from '../components/Bars/Navbar'
 import { observer } from 'mobx-react-lite'
 
 export const AppRouter = observer( () => {

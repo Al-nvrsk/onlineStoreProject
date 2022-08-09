@@ -1,9 +1,9 @@
 import { observer } from 'mobx-react-lite'
 import React, { useContext } from 'react'
 import { Link } from 'react-router-dom'
-import { Context } from '..'
-import { ADMIN_ROUTE, LOGIN_ROUTE, SHOP_ROUTE } from '../utils/consts'
-import { StandartButton } from './UiComponent/button/StandartButton'
+import { Context } from '../../index'
+import { ADMIN_ROUTE, LOGIN_ROUTE, SHOP_ROUTE } from '../../utils/consts'
+import { StandartButton } from '../UiComponent/button/StandartButton'
 import './Navbar.css'
 
 export const Navbar = observer( () => {

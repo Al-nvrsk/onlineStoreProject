@@ -23,7 +23,8 @@
 .modalWindow_content {
     padding: 20px;
     border-radius: 12px;
-    background-color: white;
+    background-color: rgb(100, 163, 124);
+    border: 3px solid rgba(32, 71, 32, 0.699);
     width: 50vw;
     height: auto;
     transform: scale(0.5);
