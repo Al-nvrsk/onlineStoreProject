@@ -1,0 +1,22 @@
+.NavbarButton {
+    display: flex;
+    background-color: rgba(230, 117, 97, 0.699);
+    border: 2px solid rgba(110, 44, 20);
+    border-radius: 3px;
+    padding: 7px;
+    cursor: pointer;
+    width: 200px;
+    font-size: medium;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.NavbarButton:hover {
+    background-color: rgba(240, 58, 26, 0.699);
+}
+
+.NavbarButton:active {
+    font-weight: bold;
+    background-color: rgba(240, 58, 26, 0.699);
+}

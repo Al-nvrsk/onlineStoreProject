@@ -4,6 +4,7 @@ import { ModalWindow } from '../components/UiComponent/ModalWindow'
 import { CreateType } from '../components/modals/CreateType'
 import { CreateBrands } from '../components/modals/CreateBrands'
 import { CreateDevice } from '../components/modals/CreateDevice'
+import { StandartButton } from '../components/UiComponent/button/StandartButton'
 
 export const Admin = () => {
 
@@ -15,10 +16,9 @@ export const Admin = () => {
 
   return (
     <div className='adminPage'>
-        Admin
-        <button onClick = {() => setTypeActive(true)}> Add Type </button>
-        <button onClick = {() => setBrandActive(true)} > Add Brand </button>
-        <button onClick = {() => setDeviceActive(true)} > Add device </button>
+        <StandartButton clicked = {() => setTypeActive(true)}> Add Type </StandartButton>
+        <StandartButton clicked = {() => setBrandActive(true)} > Add Brand </StandartButton>
+        <StandartButton clicked = {() => setDeviceActive(true)} > Add device </StandartButton>
         {/* <ModalWindow active = {modalActive} setActive = {setModalActive} /> */}
    
         <CreateType show = {typeActive} onHide = {() => setTypeActive (false)} />

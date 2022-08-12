@@ -1,0 +1,9 @@
+.CreateTypeMain {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.CreateTypeMain input {
+    width: 300px;
+    font-size: medium;
+}

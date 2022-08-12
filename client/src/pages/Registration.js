@@ -7,6 +7,7 @@ import './Auth.css'
 import { login, registration } from '../http/userAPI'
 import { Context } from '..'
 import { observer } from 'mobx-react-lite'
+import { StandartButton } from '../components/UiComponent/button/StandartButton'
 
 export const Registration = observer ( () => {
 
@@ -47,8 +48,8 @@ export const Registration = observer ( () => {
         
         <EmailInput placeholder = {'Input email...'} onChange = {(e) => setEmail(e.target.value)} value = {email} />
         <PasswordInput onChange = {(e) => setPassword(e.target.value)} value = {password}  />
-          <div >
-            <button className = 'button' onClick={click} > Registration </button>
+          <div className = 'button' >
+            <StandartButton  clicked = {click} > Registration </StandartButton>
           </div>
       </div>
     

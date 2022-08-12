@@ -32,3 +32,9 @@
 .charactericticInput button {
     color: red;
 }
+
+.CreateDeviceEndButton {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}

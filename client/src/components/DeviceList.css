@@ -12,6 +12,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: calc(100vw - 250px);
+    width: calc(100vw - 350px);
     flex-wrap: wrap;
   }

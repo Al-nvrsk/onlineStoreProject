@@ -11,9 +11,15 @@
 }
 
 .button {
-    padding: 5px;
-    margin: 10px;
+    padding: 25px;
+    margin: 15px;
     display: flex;
     justify-content: space-between;
     align-items: stretch;
+}
+
+.button_link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

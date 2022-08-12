@@ -1,6 +1,9 @@
 import React, {useState} from 'react'
 import { createType } from '../../http/deviceApi'
+import { CancelButton } from '../UiComponent/button/CancelButton'
+import { StandartButton } from '../UiComponent/button/StandartButton'
 import { ModalWindow } from '../UiComponent/ModalWindow'
+import './CreateType.css'
 
 export const CreateType = ({show, onHide}) => {
 
@@ -16,15 +19,16 @@ export const CreateType = ({show, onHide}) => {
   return (
     <div>
         <ModalWindow active = {show} setActive = {onHide}>
+            <div className='CreateTypeMain'>
             <input  value = {value} 
                     onChange = {(e) => setValue(e.target.value)}
                     placeholder = {'Input type name ...'}
             />
 
             
-            <button onClick = {addType} > Add type </button>
-            <button onClick = {onHide}> Close </button>
-
+            <StandartButton clicked = {addType} > Add type </StandartButton>
+            <CancelButton clicked = {onHide}> Close </CancelButton>
+            </div>
         </ModalWindow>
     </div>
   )

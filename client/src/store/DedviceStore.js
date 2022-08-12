@@ -36,6 +36,8 @@ export default class DeviceStore {
         this._totalCount = 0
         this._limit = 3
 
+        this._sitePage = 'Main'
+
         makeAutoObservable(this)
     }
 
@@ -73,6 +75,10 @@ export default class DeviceStore {
         this._limit = limit
     }
 
+    setSitePage(value) {
+        this._sitePage = value
+    }
+
     get types() {
         return this._types
     }
@@ -103,5 +109,8 @@ export default class DeviceStore {
 
     get totalCount() {
         return this._totalCount
+    }
+    get sitePage() {
+        return this._sitePage
     }
 }

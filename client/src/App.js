@@ -34,8 +34,9 @@ const App = observer (() => {
       <div className = {"MainPageContent"}> 
         <AppRouter />
       </div>
-      <Footer />
-    
+      <div > 
+        <Footer />
+      </div>
     </BrowserRouter>
     </div>
   );

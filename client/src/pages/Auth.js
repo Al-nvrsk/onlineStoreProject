@@ -7,30 +7,27 @@ import './Auth.css'
 import { login, registration } from '../http/userAPI'
 import { Context } from '..'
 import { observer } from 'mobx-react-lite'
+import { StandartButton } from '../components/UiComponent/button/StandartButton'
 
 export const Auth = observer ( () => {
 
-  const {user} = useContext(Context)
-  
-  const navigate = useNavigate()
+  const {user, device} = useContext(Context)
+   const navigate = useNavigate()
   const location = useLocation()
   const isLogin = location.pathname === LOGIN_ROUTE
-
   const [password, setPassword] = useState('')
   const [email, setEmail] = useState('')
 
   const click = async () => {
     try {
       let data
-      // if(isLogin) {
+      
         data = await login( email, password)
-  //     }
-  //     else {
-  //       data = await registration(email, password)
-      // }
+  
       user.setUser(user)
       user.setIsAuth(true)
       navigate(SHOP_ROUTE,{replace:true})
+      device.setSitePage('Main')
     }
       catch (e) {
         alert(e)
@@ -46,10 +43,9 @@ export const Auth = observer ( () => {
         <EmailInput placeholder = {'Input email...'} onChange = {(e) => setEmail(e.target.value)} value = {email} />
         <PasswordInput onChange = {(e) => setPassword(e.target.value)} value = {password}  />
           <div className = 'button'>
-            <Link className = 'button' to = {REGISTRATION_ROUTE}> Registration </Link>
-            <button className = 'button' onClick={click} > Enter </button>
-            {/* <button className = 'button' onClick={click}> {isLogin ? 'Enter' : 'Registration'} </button> */}
-
+            <Link className='button_link'   to = {REGISTRATION_ROUTE}> Registration </Link>
+            <StandartButton clicked = {click} > Enter </StandartButton>
+           
           </div>
       </div>
     

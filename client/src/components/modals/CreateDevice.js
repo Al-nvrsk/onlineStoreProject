@@ -5,6 +5,8 @@ import { DropdownMenu } from '../UiComponent/dropdownMenu/DropdownMenu'
 import './CreateDevice.css'
 import { observer } from 'mobx-react-lite'
 import { createDevice } from '../../http/deviceApi'
+import { CancelButton } from '../UiComponent/button/CancelButton'
+import { StandartButton } from '../UiComponent/button/StandartButton'
 
 export const CreateDevice = observer( ({show, onHide}) => {
     const {device} = useContext(Context)
@@ -107,10 +109,10 @@ export const CreateDevice = observer( ({show, onHide}) => {
                 )}
             </div>
 
-            
-                <button onClick = {addDevice} > Add device </button>
-                <button onClick = {onHide}> Close </button>
-            
+            <div className = 'CreateDeviceEndButton'>
+                <StandartButton clicked = {addDevice} > Add device </StandartButton>
+                <CancelButton clicked = {onHide}> Close </CancelButton>
+            </div>
         </ModalWindow>
     </div>
   )

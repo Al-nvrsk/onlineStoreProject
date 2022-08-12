@@ -1,0 +1,9 @@
+.CreateBrandsMain {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.CreateBrandsMain input {
+    width: 300px;
+    font-size: medium;
+}
