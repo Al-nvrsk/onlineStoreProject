@@ -2,7 +2,6 @@ import React, { useContext, useEffect } from 'react'
 import { BrandBar } from '../components/Bars/BrandBar'
 import { DeviceList } from '../components/DeviceList'
 import { TypeBar } from '../components/Bars/TypeBar'
-import { StandartButton } from '../components/UiComponent/button/StandartButton'
 import './Shop.css'
 import { Context } from '..'
 import { observer } from 'mobx-react-lite'
@@ -15,9 +14,9 @@ export const Shop = observer( () => {
 const {device} = useContext(Context)
 
 useEffect(() => {
-   fetchTypes().then(data => device.setTypes(data)) 
-   fetchBrands().then(data => device.setBrands(data)) 
-   fetchDevices(null, null, 1, 3).then(data => {
+fetchTypes().then(data => device.setTypes(data)) 
+fetchBrands().then(data => device.setBrands(data)) 
+fetchDevices(null, null, 1, 3).then(data => {
     device.setDevices(data.rows);
     device.setTotalCount(data.count)})
   }, [])
@@ -35,10 +34,8 @@ const reset = () => {
 }
   
   return (
- 
-    <div className='shopContainer'>
-      <div className='shopTypebar'>
-        {/* <h4>Device type:</h4> */}
+    <div className = 'shopContainer'>
+      <div className = 'shopTypebar'>
         <TypeBar />
         <div className = 'shopTypebarReset'>
           <CancelButton  clicked = {reset}> 

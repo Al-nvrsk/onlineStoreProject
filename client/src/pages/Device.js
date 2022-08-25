@@ -7,15 +7,12 @@ export const Device = () => {
 
   const [device, setDevice] = useState({info:[]}) 
   const {id} = useParams()
- 
 
   useEffect (() => {
     fetchOneDevice(id).then(data => setDevice(data))
   },[])
 
-
-  // { id: 2, name: "Experia 5", price:1500, rating: 5, img: 'https://i.pinimg.com/originals/87/b5/03/87b50332946770f994dc01f1566d930e.gif'}
- 
+  // { id: 2, name: "Experia 5", price:1500, rating: 5, img: 'https://i.pinimg.com/originals/87/b5/03/87b50332946770f994dc01f1566d930e.gif'} 
 //   const description = [
 //     // {id: 1, title: 'RAN Memory', description: '5 Gb' },
 // //     {id: 2, title: 'Camera', description: '12Mpx'},
@@ -47,8 +44,9 @@ if (device.img) {
         <div>
           {device.info.map(info => 
             <div key = {info.id}>
-               <span style={{fontWeight: 'bold', margin: '5px',}}>{info.title}:</span>
-                {info.description} </div>)}
+              <span style={{fontWeight: 'bold', margin: '5px',}}>{info.title}:</span>
+              {info.description} 
+            </div>)}
         </div>
     </div>
   )}

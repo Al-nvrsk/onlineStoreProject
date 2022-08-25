@@ -37,7 +37,6 @@ export const Registration = observer ( () => {
       catch (e) {
         alert(e.response.data.massage)
       }
-   
   } 
 
   return (

@@ -4,12 +4,16 @@
     height: auto;
     padding-left: 15px;
     border-bottom: 5px solid rgb(110, 44, 20);
-    background-color: rgb(206, 119, 87);
+    background-color: rgb(206, 119, 87) !important;
     border-radius: 5px;
     justify-content: space-between;
 }
 
 .navbar:nth-child() {
+    background-color: rgb(206, 119, 87) ;
+}
+
+.navbar div {
     background-color: rgb(206, 119, 87) ;
 }
 

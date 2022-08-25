@@ -45,7 +45,7 @@ export const Auth = observer ( () => {
           <div className = 'button'>
             <Link className='button_link'   to = {REGISTRATION_ROUTE}> Registration </Link>
             <StandartButton clicked = {click} > Enter </StandartButton>
-           
+           //FIXME: delete spare space 
           </div>
       </div>
     
